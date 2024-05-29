@@ -55,7 +55,7 @@ $.upload.addEventListener('drop', (event) => {
 })
 
 
-const textMoveHandler = event => {
+const textMoveHandler = function(event) {
 	event.preventDefault();
 	if (event.target === $.canvas) {
 		this.style.left = event.layerX + 'px';
